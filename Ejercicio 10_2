@@ -1,0 +1,18 @@
+import tkinter as tk
+
+root = tk.Tk()
+
+tk.Label(root, text="Lista de nombres").pack()
+
+lista = ["Gonzalo","Luis", "Florencia","Rosita"]
+lista_items = tk.StringVar(value=lista)   # Convertimos la lista a un stringVar
+
+listbox = tk.Listbox(root, height=10, listvariable=lista_items)
+listbox.pack()
+
+
+
+
+
+
+root.mainloop()
